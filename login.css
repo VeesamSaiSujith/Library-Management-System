@@ -1,0 +1,105 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set background image */
+body {
+  background-image: url('https://example.com/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: #fff;
+  background-color: #555;
+}
+
+/* Center the login form */
+.login-form {
+  width: 400px;
+  margin: 100px auto;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 30px;
+}
+
+/* Style the form elements */
+.login-form h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333333;
+}
+.headersize{
+background-color: #333;
+    color: #fff;
+    text-align: center;
+font-family:none;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #666666;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"] ,
+.login-form input[type="subject"],
+.login-form input[type="password"]{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #333333;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.login-form button:hover {
+  background-color: #222222;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body>
+ <header>
+  <div class="container">
+    <h1>Library Management System</h1>
+    <nav>
+      <ul>
+        <li><a href="lms.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="signup1.html">Sign up</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="logout.php">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+    <div class="login-form">
+      <h2>Admin Login</h2>
+      <form action="alogin.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </body>
+</html>

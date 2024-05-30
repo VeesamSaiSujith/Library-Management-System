@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav li a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Specific page styles */
+
+h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

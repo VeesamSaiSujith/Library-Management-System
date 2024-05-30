@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Welcome to Library</title>
+<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+<header>
+  <div class="headersize">
+    <h1>Library Management System</h1>
+    <nav>
+      <ul>
+        <li><a href="lms.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="signup1.html">Sign up</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="logout.php">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="login-form">
+    <h2>Delete</h2>
+    <form action="delete.php" method="POST">
+      <label for="email">Email-Id:</label>
+      <input type="text" id="email" name="email" required>
+      <label for="bookname">Book Name:</label>
+      <input type="text" id="bookname" name="bookname" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  </body>
+  </html>

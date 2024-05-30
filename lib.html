@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Welcome to Library</title>
+<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+<header>
+  <div class="headersize">
+    <h1>Library Management System</h1>
+    <nav>
+      <ul>
+        <li><a href="lms.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="signup1.html">Sign up</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="logout.php">Logout</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <div id="message"></div>
+
+
+    <div class="container my-3">
+        <h1>Manage Library</h1>
+        <hr>
+        <form id="libraryForm"  action="books_insert.php" method="POST">
+            <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label">Email-Id</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email-Id">
+                </div>
+            </div>
+    
+            <div class="form-group row">
+                <label for="bookName" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="bookName" name="bookName" placeholder="Book Name">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Author" class="col-sm-2 col-form-label">Author</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="author" name="Author" placeholder="Author">
+                </div>
+            </div>
+		<div class="form-group row">
+                <label for="idate" class="col-sm-2 col-form-label">Issue Date</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="idate" name="idate" placeholder="Issue Date">
+                </div>
+            </div>
+		<div class="form-group row">
+                <label for="ddate" class="col-sm-2 col-form-label">Due Date</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="ddate" name="ddate" placeholder="Due Date">
+                </div>
+            </div>
+		<div class="form-group row">
+                <label for="rdate" class="col-sm-2 col-form-label">Return Date</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="rdate" name="rdate" placeholder="Return Date">
+                </div>
+            </div>
+<div class="form-group row">
+                <label for="Status" class="col-sm-2 col-form-label">Status</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="Status"  name="Status" placeholder="Status">
+                </div>
+            </div>
+           
+
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Add Book</button>
+                </div>
+            </div>
+        </form>
+        
+        <div class="form-group row">
+            <div class="col-sm-10">
+        <a href="delete.html">Delete Record</a><br><br>
+        <a href="update.html">Update Record</a>
+</div></div>
+        <div id="table">
+            <h1>Your books</h1>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Issue Date</th>
+				<th scope="col">Due Date</th>
+				<th scope="col">Return Date</th>
+				<th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody id='tableBody'></tbody>
+            </table>
+        </div>
+    </div>
+
+    
+   
+</body>
+
+</html>
